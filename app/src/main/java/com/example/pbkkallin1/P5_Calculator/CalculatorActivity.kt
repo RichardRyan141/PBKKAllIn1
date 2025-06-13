@@ -88,7 +88,7 @@ fun CalculatorScreen() {
     ) {
         Text(
             text = equation,
-            fontSize = 28.sp,
+            fontSize = 40.sp,
             textAlign = TextAlign.End,
             fontWeight = FontWeight.SemiBold,
             modifier = Modifier
@@ -97,7 +97,7 @@ fun CalculatorScreen() {
         )
         Text(
             text = result,
-            fontSize = 28.sp,
+            fontSize = 40.sp,
             textAlign = TextAlign.End,
             fontWeight = FontWeight.SemiBold,
             color = Color(0xFF706E6E),
