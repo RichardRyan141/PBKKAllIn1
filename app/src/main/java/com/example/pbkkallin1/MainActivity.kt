@@ -25,6 +25,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.pbkkallin1.P10_DessertClicker.DessertClickerActivity
 import com.example.pbkkallin1.P11_ImageScroll.ImageScrollActivity
 import com.example.pbkkallin1.P12_Woof.WoofActivity
 import com.example.pbkkallin1.P2_HelloAndroid.HelloAndroidActivity
@@ -174,7 +175,7 @@ fun MainScreen() {
                 Spacer(modifier = Modifier.height(32.dp))
 
                 Text(
-                    text = "Login (P7) & Intent (P13)",
+                    text = "Login (P7)",
                     fontSize = 34.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
@@ -189,6 +190,28 @@ fun MainScreen() {
                         )
                         .clickable {
                             context.startActivity(Intent(context, LoginActivity::class.java))
+                        }
+                        .padding(vertical = 16.dp)
+                )
+
+                Spacer(modifier = Modifier.height(32.dp))
+
+                Text(
+                    text = "Dessert Clicker (P10)",
+                    fontSize = 34.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(16.dp))
+                        .background(Color(0xFFC9AEF1))
+                        .border(
+                            width = 1.dp,
+                            color = Color.Black,
+                            shape = RoundedCornerShape(16.dp)
+                        )
+                        .clickable {
+                            context.startActivity(Intent(context, DessertClickerActivity::class.java))
                         }
                         .padding(vertical = 16.dp)
                 )
