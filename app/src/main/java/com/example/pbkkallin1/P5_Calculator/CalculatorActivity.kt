@@ -87,7 +87,7 @@ fun CalculatorScreen() {
         verticalArrangement = Arrangement.Bottom
     ) {
         Text(
-            text = if (equation.isEmpty()) "" else equation,
+            text = equation,
             fontSize = 28.sp,
             textAlign = TextAlign.End,
             fontWeight = FontWeight.SemiBold,
@@ -96,7 +96,7 @@ fun CalculatorScreen() {
                 .padding(bottom = 8.dp)
         )
         Text(
-            text = if (result.isEmpty()) "" else result,
+            text = result,
             fontSize = 28.sp,
             textAlign = TextAlign.End,
             fontWeight = FontWeight.SemiBold,
