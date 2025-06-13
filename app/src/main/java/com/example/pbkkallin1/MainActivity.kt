@@ -30,6 +30,7 @@ import com.example.pbkkallin1.P12_Woof.WoofActivity
 import com.example.pbkkallin1.P2_HelloAndroid.HelloAndroidActivity
 import com.example.pbkkallin1.P3_HappyBirthday.HappyBirthdayActivity
 import com.example.pbkkallin1.P4_DiceRoller.DiceActivity
+import com.example.pbkkallin1.P5_Calculator.CalculatorActivity
 import com.example.pbkkallin1.P6_CurrencyConvert.CurrencyActivity
 import com.example.pbkkallin1.P7_login.LoginActivity
 
@@ -122,6 +123,28 @@ fun MainScreen() {
                         )
                         .clickable {
                             context.startActivity(Intent(context, DiceActivity::class.java))
+                        }
+                        .padding(vertical = 16.dp)
+                )
+
+                Spacer(modifier = Modifier.height(32.dp))
+
+                Text(
+                    text = "Calculator (P5)",
+                    fontSize = 34.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(16.dp))
+                        .background(Color(0xFF5CA9E3))
+                        .border(
+                            width = 1.dp,
+                            color = Color.Black,
+                            shape = RoundedCornerShape(16.dp)
+                        )
+                        .clickable {
+                            context.startActivity(Intent(context, CalculatorActivity::class.java))
                         }
                         .padding(vertical = 16.dp)
                 )

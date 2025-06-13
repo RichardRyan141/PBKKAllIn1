@@ -90,6 +90,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".P5_Calculator.CalculatorActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PBKKAllIn1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".P6_CurrencyConvert.CurrencyActivity"
             android:exported="true"
             android:label="@string/app_name"

@@ -118,7 +118,7 @@ fun WoofTopAppBar(modifier: Modifier = Modifier) {
                     contentDescription = null
                 )
                 Text(
-                    text = stringResource(R.string.app_name),
+                    text = "Woof App - Richard",
                     style = MaterialTheme.typography.displayLarge
                 )
             }
